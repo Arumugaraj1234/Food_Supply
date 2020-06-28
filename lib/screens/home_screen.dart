@@ -54,8 +54,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: new Text('No'),
               ),
               new FlatButton(
-                //onPressed: () => Navigator.of(context).pop(true),
-                //onPressed: () => SystemNavigator.pop(),
                 onPressed: () {
                   SystemChannels.platform.invokeMethod('SystemNavigator.pop');
                 },
